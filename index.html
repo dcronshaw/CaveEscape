@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Cave Escape</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+		<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+		<link href="assets/css/lightbox.css" rel="stylesheet" />
+		<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//scwebsrv-four.site/matomo/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+					<!-- Logo -->
+						<div id="logo">
+							<h1>Cave Escape</h1>
+							<p>An interactive text adventure</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">								
+							
+<ul>							
+	<li><a href='#header'>Home</a></li>
+	<li><a href='#about'>About</a></li>
+	<li><a href='#game'>Game</a></li>
+	<li><a href='#contact'>Contact</a></li>
+								
+</ul>
+
+												</nav>
+
+				</section>
+
+			
+				<section id="about" class="wrapper style1">
+					<div class="title">About</div>
+					<div class="container">
+						
+						<p class="style3">Inspired by the likes of King's Quest and Monkey Island, Cave Escape is an interactive text-based adventure game that puts the player into the shoes of an unnamed adventurer left to die if the depths of a massive cave system.</p><br> 
+						<p class="style3">Make decisions based on the situation, and select what to do next by clicking a button after weighing your options.</p>
+						<br><p class= "style3">Can you escape the cave?</p>
+					
+					</div>
+					
+							<div id="lightbox">
+							<a href="images/monkey1.jpg" data-lightbox="monkey1">Monkey Island ship dealer</a>
+							<a href="images/monkey2.jpg" data-lightbox="monkey2">Monkey Island town</a>
+							<a href="images/kings1.jpg" data-lightbox="kings1">King's Quest castle</a>
+							<a href="images/kings2.jpg" data-lightbox="kings2">King's Quest tree</a>
+							</div>
+						  
+				</section>
+
+			<!-- Game -->
+				<section id="game" class="wrapper style2">
+					<div class="title">The Game</div>
+					<div class="container">
+
+						<div id="startgame">
+
+						<button id="gameStart" onclick ="startUp();">Start Game</button>
+
+						</div>
+
+						<div id="start">
+
+							<p>Welcome Adventurer! What is your name?</p>
+							<form id = "newName" onsubmit = "startQuest(); return false">
+							Name: <input type = text name= "name">
+							<input type = "submit"  value= "Done">          
+							</form>
+				
+							</div>
+				
+							<div id ="cave1">
+				
+							</div>
+				
+							<div id ="playgame">
+				
+									
+										Bet amount:  <input id=test1 type = "text" text name = "bet">  
+										Guess:  <input id=test2 type = "text" text name = "guess">
+										<button onclick = "roll();">Roll!</button>
+								  
+				
+							</div>
+				
+									<div id ="currentgold"></div>
+
+					</div>
+				</section>
+
+			
+
+			<!-- Footer -->
+				<section id="contact" class="wrapper">
+					<div class="title">Contact</div>
+					<div class="container">
+						<header class="style1">
+							<h2></h2>
+							<p>
+								
+							</p>
+						</header>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+
+								<!-- Contact Form -->
+									<section>
+										<form method="post" action="#">
+											<div class="row gtr-50">
+												<div class="col-6 col-12-small">
+													<input type="text" name="name" id="contact-name" placeholder="Name" />
+												</div>
+												<div class="col-6 col-12-small">
+													<input type="text" name="email" id="contact-email" placeholder="Email" />
+												</div>
+												<div class="col-12">
+													<textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
+												</div>
+												<div class="col-12">
+													<ul class="actions">
+														<li><input type="submit" onsubmit="return false" class="style1" value="Send" /></li>
+														<li><input type="reset" class="style2" value="Reset" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</section>
+
+							</div>
+							<div class="col-6 col-12-medium">
+						</div>
+						</div>
+
+						<footer>	
+						<div>
+<ul>
+    <li id="date"></li>
+</ul>
+</div>					
+						</footer>
+				
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="game3.js"></script>
+			<script src="assets/js/lightbox.js"></script>
+			
+
+	</body>
+</html>
